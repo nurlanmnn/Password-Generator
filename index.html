@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <title>Password Generator</title>
+    </head>
+    <body>
+        <br>
+        <h1>Password<br>Generator</h1>
+        <br>
+        <label>Password length : </label>
+        <input id="numberInput" type="number" min="1" max="32" value="0"> <button id="refresh" class="fas fa-sync-alt"></button>
+        <p id="length-zero" style="font-size: 18px; color: rgb(241, 11, 11);" ></p>
+        <p id="warning-el" style="font-size: 18px; color: rgb(241, 11, 11);" ></p>
+        <br>
+        <!-- <div id="password-container"> -->
+            <button class="far fa-copy" id="copy-button" onclick="copyPassword()"> Copy</button>
+            <div id="password-el"></div>
+        <!-- </div> -->
+        <p id="message" style="color: black;"></p>
+        <fieldset>
+            <legend>Choose the features to be included in the password :</legend>
+        
+            <div>
+              <input type="checkbox" id="number" name="number" checked>
+              <label for="number">Number</label>
+            </div>
+        
+            <div>
+              <input type="checkbox" id="letter" name="letter" checked>
+              <label for="letter">Letter</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="capitalized" name="capitalized" checked>
+                <label for="capitalized">Capital letter</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="punctuation" name="punctuation" checked>
+                <label for="punctuation">Punctuation</label>
+            </div>
+        </fieldset>
+        <button id="generateButton">Generate Password</button>
+        <!-- <button id="punctuationButton">Password with Punctuation</button> -->
+        <br>
+        <br>
+        <!-- <hr> -->
+        <footer style="padding-top: 50px; font-size: 20px;" >
+            <p style="padding-right: 900px; color: rgb(174, 171, 171);">made by <a style="color: rgb(174, 171, 171);" href="https://github.com/nurlanmnn">Nurlan Mammadli</a> &copy; 2023 Password Generator</p>
+        </footer>	
+        <script src="index.js"></script>
+    </body>
+</html>
