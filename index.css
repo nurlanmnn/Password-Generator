@@ -26,6 +26,7 @@ input {
     height: 25;
     font-family: 'monospace', sans-serif;
     font-size: large;
+    color: grey;
 }
 
 #password-container {

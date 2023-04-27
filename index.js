@@ -191,7 +191,7 @@ generateButton.addEventListener("click", function() {
     warningEl.textContent = ""
   }
 
-  if (warningEl !==  "The maximum number of characters is 32 !" && selectedFeatures.length > 0 && warningEl == "Please select at least one feature for the password.") {
+  if (warningEl !==  "The maximum number of characters is 32 !" || "Please select at least one feature for the password." && selectedFeatures.length > 0 ) {
     toggleCopyButton();
   }
 })
